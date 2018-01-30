@@ -30,6 +30,10 @@ li {
     border-radius: .25em;
 }
 
+.input_validation {
+	border: 1px solid red;
+}
+
 .message_text {
 	border-top: 1px dashed grey;
 	padding-top: 1em;
@@ -38,4 +42,17 @@ li {
 
 .message_text span {
 	font-weight: bold;
+}
+
+.container_wrapper.test::after {
+	display: inline-block;
+	width: 100%;
+	height: 3em;
+	background: red;
+	color: white;
+	padding: 1em;
+	text-align: center;
+	margin: 1em;
+	border-radius: .25em;
+	content: "Please check your fields to see if they blank or if your Max Budget is blank";
 }
