@@ -80,6 +80,9 @@ const onAddToListClicked = (evt) => {
 	for (let i=0; i <itemNames.length;i++) {
 		if (itemNames[i].value || itemPrices[i].value !== '') {
 			console.log(myShoppingList.addToList(itemNames[i].value, itemPrices[i].value));
+		} else if (itemNames[i].value || itemPrices[i].value == '' ) {
+			$(".container_wrapper").addClass( "test");
+			$( ".js-shopping-list-price, .js-shopping-list-item" ).addClass( "input_validation" );
 		}
 		itemNames[i].value = '';
 		itemPrices[i].value = '';
